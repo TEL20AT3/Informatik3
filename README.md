@@ -19,5 +19,6 @@ Informatik 3 Vorlesungsmaterialien
     - Paketmanager `pacman` aktualiseren: `pacman -Syu` (falls das Programm schließt erneut öffnen)
     - Den Rest aktualiseren `pacman -Su`
     - Danach development tools und die minGW toolchain installieren: `pacman -S --needed base-devel mingw-w64-x86_64-toolchain`
-      - Die Eingabeaufforderung beide Male mit Enter Taste bestätigen und alle Pakete installieren (Ist zwar etwas größer, dafür werden einige Tools mit geliefert wie z.b. `make`)
+      - Die Eingabeaufforderung beide Male mit Enter Taste bestätigen und alle Pakete installieren (Ist zwar etwas größer, dafür werden einige Tools mit geliefert)
+    - make installieren `pacman -S make`
     - minGW Installation im Windows `PATH` eintragen: `<MSYS2 root>/mingw64/bin`

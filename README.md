@@ -9,7 +9,7 @@ Informatik 3 Vorlesungsmaterialien
   - [Gcc auf Windows mit VsCode](https://code.visualstudio.com/docs/cpp/config-mingw)
   - [Mac mit VsCode](https://code.visualstudio.com/docs/cpp/config-clang-mac)  
 
-**MinGW C++ compiler auf Windows installieren (Video Anleitung folgt)**
+**MinGW C++ compiler auf Windows installieren**
 - Abgespeckte Version direkt mit dem [MinGW Installer von Sourceforge](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
   -  Installation z.B. unter `C:\mingw64`: Dann muss folgender Pfad im Windows `PATH` angegeben werden: `C:\mingw64\bin`
   -  Überprüfen der Installation im Windows Terminal mit `g++ --version`
@@ -22,3 +22,5 @@ Informatik 3 Vorlesungsmaterialien
       - Die Eingabeaufforderung beide Male mit Enter Taste bestätigen und alle Pakete installieren (Ist zwar etwas größer, dafür werden einige Tools mit geliefert)
     - make installieren `pacman -S make`
     - minGW Installation im Windows `PATH` eintragen: `<MSYS2 root>/mingw64/bin`
+- Videos:
+  - [minGW installieren](https://youtu.be/nHQ9DdLISqY)

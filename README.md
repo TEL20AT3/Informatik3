@@ -24,3 +24,4 @@ Informatik 3 Vorlesungsmaterialien
     - minGW Installation im Windows `PATH` eintragen: `<MSYS2 root>/mingw64/bin`
 - Videos:
   - [minGW installieren](https://youtu.be/nHQ9DdLISqY)
+  - [VsCode mit C++ konfigurieren](https://youtu.be/FysIjYNbhgw)

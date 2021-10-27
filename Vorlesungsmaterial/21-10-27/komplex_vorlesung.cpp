@@ -9,7 +9,9 @@ class komplex
 
 public:
    // komplex();
+   // inline Konstruktor
    komplex(double re = 0, double im = 0): _re(re), _im(im) {cout << "2ter Konstruktor\n";};
+   ~komplex();
    void ausgabe();
 
    void set_im (double im);
@@ -26,12 +28,22 @@ int main(int argc, char const *argv[])
    zahl2.ausgabe();
    zahl2.set_im(10);
    zahl2.ausgabe();
+
+   if (zahl2 == zahl)
+   {
+      /* code */
+   }
+
+   cout << "Letzte Programmzeile\n";
    return 0;
 }
 
 
 void komplex::ausgabe() {
    cout << "Komplexe Zahl: " << _re << ", " << _im << endl;
+}
+komplex::~komplex() {
+   cout << "Bye, bye!\n";
 }
 void komplex::set_im(double im) {
    _im = im;

@@ -14,6 +14,10 @@ public:
    ~komplex();
    void ausgabe();
 
+   // operator Überladen
+   int operator== (const komplex& obj);
+   friend ostream& operator<< (ostream& os, const komplex& obj);
+
    void set_im (double im);
    double get_im ();
 };
@@ -27,18 +31,33 @@ int main(int argc, char const *argv[])
    // zahl._re = 2;
    zahl2.ausgabe();
    zahl2.set_im(10);
-   zahl2.ausgabe();
+   // zahl2.ausgabe();
+   cout << "Zahl2: " << zahl2 << endl;
 
    if (zahl2 == zahl)
    {
-      /* code */
+      cout << "Zahlen sind gleich\n";
+   }
+   else {
+      cout << "Zahlen sind nicht gleich\n";
    }
 
    cout << "Letzte Programmzeile\n";
    return 0;
 }
 
-
+int komplex::operator== (const komplex& obj) {
+   if (_re == obj._re && _im == obj._im) {
+      return true;
+   }
+   else {
+      return false;
+   }
+}
+ostream& operator<< (ostream& os, const komplex& obj) {
+   os << "mit operator<< : " << obj._re << ", " << obj._im << endl;
+   return os;
+}
 void komplex::ausgabe() {
    cout << "Komplexe Zahl: " << _re << ", " << _im << endl;
 }

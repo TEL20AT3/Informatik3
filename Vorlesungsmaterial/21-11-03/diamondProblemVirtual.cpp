@@ -14,33 +14,30 @@ public:
 
 class B : virtual public A
 {
-   int b;
-
 public:
    B(int b = 0) : A(b) {}
 };
 
 class C : virtual public A
 {
-   int c;
-
 public:
    C(int c = 0) : A(c) {}
 };
 
 class D : public B, public C
 {
-   int d;
-
 public:
-   D(int d = 0) : B(d), C(d) {}
+   // Konstruktor von A muss hier aufgerufen werden damit A._a einn Wert zugewiesen wird
+   D(int d = 0) : B(d), C(d), A(d) {}
 };
 
 int main()
 {
-   D d(44);
    B b(5);
+   C c(10);
+   D d(44);
    b.ausgabe();
+   c.ausgabe();
    d.ausgabe();
    return EXIT_SUCCESS;
 }

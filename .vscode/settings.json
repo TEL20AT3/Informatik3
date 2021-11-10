@@ -1,0 +1,11 @@
+{
+   "files.associations": {
+      "*.pm": "perl",
+      "*.pl": "perl",
+      "*.tmpl": "html",
+      "*.cpp": "cpp",
+      "ostream": "cpp",
+      "type_traits": "cpp",
+      "__config": "cpp"
+   }
+}

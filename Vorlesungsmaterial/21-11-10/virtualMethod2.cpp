@@ -18,13 +18,14 @@ class Derived: public Base {
    }
 };
 
-
 int main(int argc, char const *argv[])
 {
    Derived d;
    Base& base_ref = d;
+   Base* base_ptr = &d;
 
    base_ref.getNameVirtual();
    base_ref.getName();
+   base_ptr->getNameVirtual();
    return 0;
 }

@@ -16,6 +16,8 @@ class Derived: public Base {
    void getName() {
       cout << "Derived::getName()\n";
    }
+
+   fadfasdfasdf;
 };
 
 

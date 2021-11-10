@@ -7,14 +7,14 @@ Informatik 3 Vorlesungsmaterialien
 - Detailliertere Infos folgen mit Beispiel setup
 - Link zur VsCode Seite:
   - [Gcc auf Windows mit VsCode](https://code.visualstudio.com/docs/cpp/config-mingw)
-  - [Mac mit VsCode](https://code.visualstudio.com/docs/cpp/config-clang-mac)  
+  - [Mac mit VsCode](https://code.visualstudio.com/docs/cpp/config-clang-mac)
 
 **MinGW C++ compiler auf Windows installieren**
 - Abgespeckte Version direkt mit dem [MinGW Installer von Sourceforge](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
   -  Installation z.B. unter `C:\mingw64`: Dann muss folgender Pfad im Windows `PATH` angegeben werden: `C:\mingw64\bin`
   -  Überprüfen der Installation im Windows Terminal mit `g++ --version`
 -  Installation über MSYS2 (Paket Manager für Windows)
-    - [Download](https://www.msys2.org/) 
+    - [Download](https://www.msys2.org/)
     - `msys2-x86_64-20210725.exe` runterladen, installieren und ausführen
     - Paketmanager `pacman` aktualiseren: `pacman -Syu` (falls das Programm schließt erneut öffnen)
     - Den Rest aktualiseren `pacman -Su`
@@ -25,4 +25,8 @@ Informatik 3 Vorlesungsmaterialien
 - Videos:
   - [minGW installieren](https://youtu.be/nHQ9DdLISqY)
   - [VsCode mit C++ konfigurieren](https://youtu.be/FysIjYNbhgw)
-  
+
+
+## Aufgabe ToDo Liste
+
+-  Menüführung idealerweise per state machine (Zustandsautomat) gestallten: [link](https://github.com/TEL20A/Informatik1/tree/main/Vorlesungsmaterial/2021-01-22-lab)
